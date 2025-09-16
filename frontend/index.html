@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI To-Do Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="dark">
+  <div class="header">
+    <h2>AI To-Do Chatbot</h2>
+    <button id="toggleTheme">🌙</button>
+  </div>
+
+  <div id="chatbox"></div>
+
+  <div id="inputArea">
+    <input type="text" id="userInput" placeholder="Type a task or command...">
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
